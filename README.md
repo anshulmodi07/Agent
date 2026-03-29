@@ -63,7 +63,6 @@ User Input
 🔁 Self-Healing Engine → Fix failures
    ↓
 📜 Audit Logger → Record reasoning
-```
 
 🤝 Multi-Agent System
 Agent	Role
@@ -73,7 +72,10 @@ Agent	Role
 ✅ VerificationAgent	Validates correctness
 🚨 Exception Handler	Detects & resolves failures
 📈 SLA Monitor	Tracks workflow health
+```
+
 🔥 Key Capabilities
+```
 ⚙️ 1. Dynamic Workflow Orchestration
 Workflows defined via JSON configs
 No hardcoding required
@@ -109,8 +111,10 @@ Bottleneck detection
 Process drift alerts
 
 👉 Prevents failures before they happen
+```
 
 🖥️ Demo Overview
+```
 
 AEOS provides a real-time enterprise dashboard showing:
 
@@ -133,6 +137,7 @@ DecisionAgent → selects best vendor
 VerificationAgent → validates decision
 If failure → system retries with alternative
 All steps logged
+```
 
 🏗️ Architecture
 ```
