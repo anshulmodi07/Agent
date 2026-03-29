@@ -1,0 +1,9 @@
+{
+  "name": "procurement",
+  "steps": [
+    "parse",
+    "data",
+    "decision",
+    "verification"
+  ]
+}
