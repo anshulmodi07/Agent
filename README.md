@@ -1,59 +1,98 @@
 🚀 AEOS — Autonomous Enterprise Operating System
 
-“Where workflows don’t just run… they think, adapt, and evolve.”
+“From automation to autonomy — where workflows think, recover, and evolve.”
 
-📌 Overview
+🧠 What is AEOS?
 
-AEOS (Autonomous Enterprise Operating System) is a multi-agent AI system designed to take ownership of complex enterprise workflows.
+AEOS is a multi-agent AI system that takes full ownership of enterprise workflows — from execution to error recovery — without human intervention.
 
-It goes beyond traditional automation by enabling:
+Instead of static automation, AEOS introduces:
 
-🤖 Autonomous execution of workflows
-🔁 Self-healing error recovery
-📜 Full auditability of decisions
-🧠 Intelligent agent collaboration
-🎯 Problem Statement
+🤖 Autonomous decision-making
+🔁 Self-healing workflows
+📜 Explainable audit trails
+⚙️ Dynamic workflow execution
 
-Modern enterprise workflows such as procurement, onboarding, and contract management are:
+👉 Think of it as a team of AI employees collaborating in real-time
 
-❌ Manual and error-prone
-❌ Hard to debug and monitor
-❌ Lack transparency and auditability
+🚨 The Problem
 
-💡 Studies show that over 70% of enterprise workflows require manual intervention, leading to delays and inefficiencies.
+Enterprise workflows today are fundamentally broken:
 
-💡 Solution
+70%+ workflows require manual intervention
+40% delays are caused by bottlenecks & approvals
+Failures are:
+❌ Hard to detect
+❌ Hard to debug
+❌ Impossible to explain
+Example:
 
-AEOS introduces a multi-agent architecture where specialized AI agents collaborate to:
+A procurement request fails because:
 
-Understand tasks
-Retrieve relevant data
-Make decisions
-Verify outcomes
-Detect and recover from failures
-🧠 Key Features
-⚙️ 1. Process Orchestration
-Dynamic workflow execution using a config-driven engine
-Supports workflows like:
-Procurement-to-payment
-Employee onboarding
-Contract lifecycle
-🤝 2. Multi-Agent Collaboration
+vendor exceeds budget
+approval is missing
+system times out
 
-Each agent has a dedicated role:
+👉 Traditional systems: fail silently
+👉 AEOS: detect → analyze → recover → continue
 
-Agent	Responsibility
-🧠 ParseAgent	Extracts structured input
-📊 DataAgent	Retrieves relevant data
-🤖 DecisionAgent	Makes intelligent decisions
+💡 Our Solution
+
+AEOS introduces a multi-agent orchestration system where:
+
+Each agent:
+
+has a specific responsibility
+collaborates with others
+shares structured context
+🧠 Core Idea
+Workflow ≠ Fixed Code  
+Workflow = Dynamic Agent Collaboration
+```
+⚙️ How AEOS Works
+User Input
+   ↓
+🧠 Parse Agent → Understand request
+   ↓
+📊 Data Agent → Fetch context/data
+   ↓
+🤖 Decision Agent → Make decision
+   ↓
+✅ Verification Agent → Validate output
+   ↓
+🔁 Self-Healing Engine → Fix failures
+   ↓
+📜 Audit Logger → Record reasoning
+```
+
+🤝 Multi-Agent System
+Agent	Role
+🧠 ParseAgent	Converts input → structured data
+📊 DataAgent	Retrieves relevant context
+🤖 DecisionAgent	Chooses optimal action
 ✅ VerificationAgent	Validates correctness
-🚨 ExceptionHandler	Detects & resolves failures
-📈 SLAMonitor	Tracks workflow health
-🔁 3. Self-Healing Workflows
-Detects failures in real-time
-Automatically retries with alternatives
-Escalates or reroutes when needed
-📜 4. Audit Trail & Explainability
+🚨 Exception Handler	Detects & resolves failures
+📈 SLA Monitor	Tracks workflow health
+🔥 Key Capabilities
+⚙️ 1. Dynamic Workflow Orchestration
+Workflows defined via JSON configs
+No hardcoding required
+Easily extensible
+{
+  "steps": ["parse", "data", "decision", "verification"]
+}
+🤖 2. Autonomous Execution
+End-to-end workflow execution
+Minimal human involvement
+Real-time decision making
+🔁 3. Self-Healing System
+Detects invalid decisions
+Retries with alternatives
+Escalates when required
+
+👉 System doesn’t fail — it adapts
+
+📜 4. Full Audit Trail
 
 Every step logs:
 
@@ -62,121 +101,60 @@ Output
 Reasoning
 Timestamp
 
-👉 Ensures full transparency and traceability
+👉 Enables explainable AI for enterprises
 
 🚨 5. Workflow Health Monitoring
-SLA compliance tracking
+SLA tracking
 Bottleneck detection
-Process drift analysis
-🏗️ System Architecture
-User Input
+Process drift alerts
+
+👉 Prevents failures before they happen
+
+🖥️ Demo Overview
+
+AEOS provides a real-time enterprise dashboard showing:
+
+📊 Active workflows (procurement, onboarding, contracts)
+🤖 Live agent activity
+🔁 Exception handling & recovery
+📜 Audit logs with reasoning
+🚨 Workflow health metrics
+🧪 Example Flow
+
+Input:
+
+Buy 3 laptops under 50000
+
+Execution:
+
+ParseAgent → extracts item, quantity, budget
+DataAgent → fetches vendor options
+DecisionAgent → selects best vendor
+VerificationAgent → validates decision
+If failure → system retries with alternative
+All steps logged
+
+🏗️ Architecture
+```
+Multi-Agent Layer
    ↓
-Parse Agent
-   ↓
-Data Agent
-   ↓
-Decision Agent
-   ↓
-Verification Agent
+Workflow Engine (JSON-driven)
    ↓
 Self-Healing Engine
    ↓
-Audit Logger
+Audit Layer
    ↓
-Final Output
+Frontend Dashboard
+```
 ⚙️ Tech Stack
-🧠 AI & Backend
+🧠 Backend & AI
 Node.js
 Gemini API (LLM)
 Custom Agent Framework
 🏗️ Architecture
 Multi-Agent System
-Workflow Engine (JSON-driven)
+Workflow Engine
 Modular Design
 🎨 Frontend (Demo)
-HTML / CSS / JS (dashboard simulation)
-Real-time workflow visualization
-
-📂 Project Structure
-aeos-system/
-├── src/
-│   ├── agents/
-│   │   ├── parseAgent.js
-│   │   ├── dataAgent.js
-│   │   ├── decisionAgent.js
-│   │   ├── verificationAgent.js
-│   │
-│   ├── core/
-│   │   ├── orchestrator.js
-│   │
-│   ├── workflows/
-│   │   ├── procurement.json
-│   │
-│   ├── utils/
-│   │   ├── logger.js
-│   │
-│   ├── index.js
-│
-├── frontend/
-│   ├── index.html
-│   ├── style.css
-│   ├── app.js
-│
-├── .env
-├── package.json
-
-🚀 How It Works
-User provides input
-👉 “Buy 3 laptops under 50000”
-ParseAgent extracts:
-item
-quantity
-budget
-DataAgent fetches vendors
-DecisionAgent selects best option
-VerificationAgent validates
-If failure occurs:
-system retries with alternative
-or escalates
-All steps are logged
-🎬 Demo Highlights
-📊 Dashboard showing active workflows
-🤖 Live agent activity
-🔁 Self-healing in action
-📜 Audit logs with reasoning
-🚨 Exception handling panel
-📈 Scalability
-
-AEOS is designed to scale across multiple domains:
-
-🏢 Procurement Automation
-👨‍💼 Employee Onboarding
-📄 Contract Management
-📊 Meeting Intelligence Systems
-
-👉 New workflows can be added without changing core code
-
-🔥 Why AEOS?
-Feature	Benefit
-Autonomous Execution	Reduces manual effort
-Self-Healing	Handles failures automatically
-Multi-Agent Design	Modular & scalable
-Auditability	Transparent decision-making
-Config-Driven	Easy to extend
-🧪 Future Enhancements
-Real API integrations (vendors, HR systems)
-Database persistence (MongoDB / PostgreSQL)
-Real-time dashboards (React)
-Notification system (email/Slack)
-Advanced SLA prediction models
-
-
-AEOS transforms enterprise workflows from:
-
-❌ static and manual
-to
-✅ autonomous, intelligent, and self-healing systems
-
-🚀 “The future of enterprises is not automation… it’s autonomy.”
-
-⭐ If you like this project, give it a star!
+HTML / CSS / JS
+Real-time simulation dashboard
