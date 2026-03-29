@@ -146,11 +146,14 @@ Audit Layer
    ↓
 Frontend Dashboard
 ```
+
 ⚙️ Tech Stack
+```
 🧠 Backend & AI
 Node.js
 Gemini API (LLM)
 Custom Agent Framework
+
 🏗️ Architecture
 Multi-Agent System
 Workflow Engine
@@ -158,3 +161,4 @@ Modular Design
 🎨 Frontend (Demo)
 HTML / CSS / JS
 Real-time simulation dashboard
+```
